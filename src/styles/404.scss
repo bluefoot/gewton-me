@@ -1,0 +1,36 @@
+@import "colors.scss";
+
+#errorpage {
+  background-image: none;
+  background-color: $color-light-shades;
+  color: $color-dark-shades;
+
+  a {
+    color: $color-main-brand;
+    font-size: 20px;
+  }
+  #main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 50px;
+      display: inline-block;
+      padding-right: 12px;
+      animation: type 0.5s alternate infinite;
+      margin: 0 auto;
+      transition: all 0.6s;
+    }
+  }
+}
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0px 0px $color-dark-shades;
+  }
+  to {
+    box-shadow: inset -3px 0px 0px transparent;
+  }
+}
