@@ -49,9 +49,10 @@ body {
     font-weight: 300;
     letter-spacing: 3px;
   }
-  .portrait {
-    display: none;
-  }
+}
+
+.portrait {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -67,29 +68,20 @@ body {
       .index-header {
         background: url(../images/gewton-bg-xs.jpg) no-repeat center;
         text-align: center;
-        min-height: 9em;
-        padding-top: 1em;
-        position: relative;
+        min-height: 9.5em;
+        padding-top: .5em;
 
         h1 {
           font-size: 48px;
           margin: 0;
         }
-
-        .portrait {
-          display: inline-block;
-          height: 134px;
-          border: 10px solid $color-light-shades;
-          position: absolute;
-          margin: 10px auto;
-          left: 0;
-          right: 0;
-        }
       }
-    }
-
-    .navigation-wrapper {
-      margin-top: 111px;
+      .portrait {
+        display: block;
+        height: 134px;
+        border: 10px solid $color-light-shades;
+        margin: -22% auto 0 auto;
+      }
     }
   }
 }
@@ -117,9 +109,9 @@ body {
           font-size: 35px;
           margin: 0;
         }
-        .portrait {
-          height: 110px;
-        }
+      }
+      .portrait {
+        height: 110px;
       }
     }
   }

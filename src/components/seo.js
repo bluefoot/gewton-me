@@ -66,8 +66,8 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <link rel="canonical" href={site.siteMetadata.siteUrl} />
-      {/* Not supposed to be here but build scripts fail beause of :wght@200;300 */}
-      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet" />
       
     </Helmet>
   )
